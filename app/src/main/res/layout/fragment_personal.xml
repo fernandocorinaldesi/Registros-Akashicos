@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBackground">
+
+ <TableLayout
+     android:id="@+id/tableLayout2"
+     android:layout_width="0dp"
+     android:layout_height="0dp"
+     android:layout_marginBottom="70dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.55"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent">
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="15px"
+      android:paddingBottom="15px">
+
+   <TextView
+       android:id="@+id/labelnombre"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Nombre"
+       android:textColor="@color/formFontColor" />
+
+   <EditText
+       android:id="@+id/nombre"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:background="@color/formInputColor"
+       android:ems="10"
+       android:inputType="textPersonName" />
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="15px"
+      android:paddingBottom="15px">
+
+   <TextView
+       android:id="@+id/labeldireccion"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Direccion"
+       android:textColor="@color/formFontColor" />
+
+   <EditText
+       android:id="@+id/direccion"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/formInputColor"
+       android:ems="10"
+       android:inputType="textPersonName" />
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="15px"
+      android:paddingBottom="15px">
+
+   <TextView
+       android:id="@+id/labellugarnacimiento"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Lugar de nacimiento "
+       android:textColor="@color/formFontColor" />
+
+   <EditText
+       android:id="@+id/lugarNacimiento"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:background="@color/formInputColor"
+       android:ems="10"
+       android:inputType="textPersonName" />
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="15px"
+      android:paddingBottom="15px">
+
+   <TextView
+       android:id="@+id/labelfechanacimiento"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Fecha de nacimiento "
+       android:textColor="@color/formFontColor" />
+
+   <EditText
+       android:id="@+id/fechaNacimiento"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:background="@color/formInputColor"
+       android:ems="10"
+       android:inputType="textPersonName" />
+
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="15px"
+      android:paddingBottom="15px">
+
+   <TextView
+       android:id="@+id/labeltelefono"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/telefono"
+       android:textColor="@color/formFontColor" />
+
+   <EditText
+       android:id="@+id/telefono"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/formInputColor"
+       android:ems="10"
+       android:inputType="phone" />
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="15px"
+      android:paddingBottom="15px">
+
+   <TextView
+       android:id="@+id/labelemail"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/email"
+       android:textColor="@color/formFontColor" />
+
+   <EditText
+       android:id="@+id/email"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/formInputColor"
+       android:ems="10"
+       android:inputType="textEmailAddress" />
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </TableRow>
+ </TableLayout>
+
+ <Button
+     android:id="@+id/button2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:background="@drawable/button_round_corners"
+     android:text="Guardar"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

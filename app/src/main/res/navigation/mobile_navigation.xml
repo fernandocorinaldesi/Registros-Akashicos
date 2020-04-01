@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.registrosakashicos.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.registrosakashicos.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_personal"
+        android:name="com.registrosakashicos.ui.personal.PersonalFragment"
+        android:label="@string/menu_personal"
+        tools:layout="@layout/fragment_personal" />
+    <fragment
+        android:id="@+id/nav_orientaciondelalma"
+        android:name="com.registrosakashicos.ui.orientaciondelalma.OrientacionDelAlmaFragment"
+        android:label="@string/menu_orientaciondelalma"
+        tools:layout="@layout/fragment_orientaciondelalma" />
+
+    <fragment
+        android:id="@+id/nav_procesoevolutivo"
+        android:name="com.registrosakashicos.ui.procesoevolutivo.ProcesoEvolutivoFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_procesoevolutivo" />
+
+    <fragment
+        android:id="@+id/nav_perfildelalma"
+        android:name="com.registrosakashicos.ui.perfildelalma.PerfilDelAlmaFragment"
+        android:label="@string/menu_perfildelalma"
+        tools:layout="@layout/fragment_perfildelalma" />
+
+
+    <fragment
+        android:id="@+id/nav_perfildelalma2"
+        android:name="com.registrosakashicos.ui.perfildelalma.PerfilDelAlma2Fragment"
+        android:label="@string/menu_perfildelalma2"
+        tools:layout="@layout/fragment_perfildelalma2" />
+</navigation>
